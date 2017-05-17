@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+{% load static %}    
+<html lang=en>
+	<head>
+		<title>2 Property (Add Post Sell) - Fliptango</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'sansation/sansation-font.css' %}" rel="stylesheet">
+        <link href="{% static 'ubuntu/ubuntu-font.css' %}" rel="stylesheet">
+		<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+       <!--  css for slick slide  -->
+        <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}"/>
+      <!--  css for business module  -->
+        <link href="{% static 'css/theme.css' %}" rel="stylesheet">
+        <link href="{% static 'css/fliptango-business-styles.css' %}" rel="stylesheet">
+        
+        <link href="{% static 'css/fliptango-styles.css' %}" rel="stylesheet">
+        <!--  styleguide css-->
+        <link href="{% static 'css/fliptango-model_styles.css' %}" rel="stylesheet">
+       <!-- bootstrap select dropdown css --> 
+        <link href="{% static 'bootstrap-select-css/bootstrap-select.min.css' %}" rel="stylesheet">
+        <!-- bootstrap slider css --> 
+        <link href="{% static 'bootstrap-slider-css/bootstrap-slider.min.css' %}" rel="stylesheet">
+        <!-- bxSlider CSS file -->
+        <link href="{% static 'jquery-bx-slider-css/jquery.bxslider.css' %}" rel="stylesheet" />
+    </head>
+	
+	<body>
+        
+      <!--  SECTION: Top Banner  start  -->
+        <div class="ft_top-section-banner">
+            <div class="ft_banner-wrapper">
+
+                <div class="ft_banner-img-30vph" style="background:url({% static 'img/banner-image-property.png' %}) no-repeat center center;">
+
+                    <div class="ft_banner-content-wrapper_property">
+                        <div class="ft_special-header">
+                            Post your Property
+                        </div>
+                    </div>  <!--  ft_banner-content-wrapper_property  -->
+                
+                </div>  <!--  ft_banner-img-30vph  -->
+
+            </div>  <!--  ft_banner-wrapper  -->
+        </div> <!--  ft_top-section-banner  -->
+      <!--  SECTION: Top Banner  end  -->  
+      <!--  SECTION: Content below Top Banner  start  -->   
+        <div class="container-fluid">
+            <div class="row banner-below-content-property">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="media in-left">
+                        <div class="media-right pull-right media-middle">
+                            <a href="#"> 
+                                <img class="media-object" src="{% static 'img/icon-top.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Not Sure of your Property's Value</h4>
+                            <p>Check current value, price trends</p>
+                            <a href="#">Check Now</a>
+                        </div>
+                    </div>  <!-- media in-left -->
+                </div>  <!--  col-xs-12 col-sm-6  -->
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="media in-right">
+                        <div class="media-left pull-left media-middle">
+                            <a href="#"> 
+                                <img class="media-object" src="{% static 'img/icon-top.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Home Selling Guide</h4>
+                            <p>Please read the doc it will help you</p>
+                            <a href="#">Check Now</a>
+                        </div>
+                    </div>  <!-- media in-right -->
+                </div>  <!--  col-xs-12 col-sm-6  -->
+            </div>  <!--  row  banner-below-content-property -->
+        </div>  <!-- container-fluid  -->
+      <!--  SECTION: Content below Top Banner end  -->
+	    
+        <div class="joblist_content uploadresumeform property">
+          
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12 col-md-12">
+                        <div class="uform" style="margin-bottom:40px;">
+                            <div class="ft_main-sub-heading">
+                                List Your Property for Sale
+                            </div>
+                            
+                            <div class="ft_joblist_searchpanel row">
+                                <div class="col-xs-12 col-sm-8 col-md-9">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12">
+                                            <div class="form-group has-success has-feedback">
+                                                <input type="text" class="form-control" id="propertyLocation" placeholder="Enter your property location">
+                                                <span class="form-control-feedback s_input" aria-hidden="true"></span> 
+                                            </div>
+                                        </div>  <!--  <!--  col-md-5 -->
+                                        <div class="col-xs-12 col-sm-12 col-md-12">
+                                            <div class="form-group">
+                                                <label for="" style="top:-12px;">Title</label>
+                                                <input type="text" class="form-control" id="" placeholder="eg:Luxurious 3 bhk apartment at Downtown, Dubai">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <label for="" style="top:-12px;">Address line1</label>
+                                                <input type="text" class="form-control" id="" placeholder="eg: #1209,12th Floor,Adventz Tower">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <label for="" style="top:-12px;">Address line2</label>
+                                                <input type="text" class="form-control" id="" placeholder="Downtown,Dubai,UAE">
+                                            </div>
+                                        </div>
+                                    </div> <!-- row -->
+                                </div>  <!--  col-xs-12 col-sm-8 col-md-9  -->
+                               <!--  completion status div -->
+                                <div class="col-xs-12 col-sm-4 col-md-3">
+                                    <div class="completion-status-wrap">
+                                        <div class="head">
+                                            Completion Status
+                                        </div>
+                                        <div class="body">
+                                            <img src="{% static 'img/completion-status.png' %}">
+                                            <div class="content">
+                                                100% complete property info gets you: Genuine Responses | Best Price
+                                            </div>
+                                        </div>
+                                    </div>  <!--  completion-status-wrap  -->
+                                </div>  <!--  col-xs-12 col-sm-4 col-md-3  -->
+                                
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                  <!--  this div just has border -->
+                                    <div class="ft_content-sub-separations-grey" style="margin:3px 0 10px"></div>
+                                </div> <!--  col-xs-12   -->
+                            </div>  <!--  ft_joblist_searchpanel  -->
+                            
+                            <div class="uformstart">
+                                
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 oultine-and-red">
+                                        <label class="label-add-type">Property Details</label>
+                                        
+                                        <div class="btn-group owner-broker-btn-wrap" role="group">
+                                            <a class="btn" disabled>
+                                                <img src="{% static 'img/owner.png' %}" style="img-responsive" height="20">
+                                            </a>
+                                            <a class="btn btn-owner-broker">
+                                                Owner
+                                            </a>
+                                        </div>  <!-- owner-broker-btn-wrap  -->
+
+<!-- below, the seller btn is not seletced which is why "owner-broker-btn-not-selected-wrap" class needs to be there. This class implies that this btn has not been selected & looks like unseletced  -->
+                                        <div class="btn-group owner-broker-btn-wrap" role="group">
+                                            <a class="btn" disabled>
+                                                <img src="{% static 'img/broker.png' %}" style="img-responsive" height="20">
+                                            </a>
+                                            <a class="btn btn-owner-broker">
+                                                Broker
+                                            </a>
+                                        </div>  <!--  owner-broker-btn-wrap  -->
+                                        
+                                    </div>  <!--  col-md-6 -->
+                                    
+                                    <div class="col-xs-12 col-sm-6 col-md-6 oultine-and-red">
+                                        <label class="label-add-type">Sell Type</label>
+                                        
+                                        <button type="button" class="btn ft_outlined-btn ft_primary-btn-mini">Rent</button>
+                                        <button type="button" class="btn ft_default-btn-red ft_primary-btn-mini">Sell</button>
+                                    </div>  <!--  col-sm-6 -->
+                                    
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                      <!--  this div just has border -->
+                                        <div class="ft_content-sub-separations-grey" style="margin-top:21px;"></div>
+                                    </div> <!--  col-xs-12   -->
+                                </div> <!--  row -->
+                                
+                                <div class="row">   
+                                    <div class="col-xs-12 col-sm-6 col-md-6 oultine-and-red">
+                                        <label class="label-add-type">Property Category</label>
+                                        
+                                        <button type="button" class="btn ft_outlined-btn ">Commercial</button>
+                                        <button type="button" class="btn ft_default-btn-red ">Residential</button>
+                                    </div>  <!--  col-md-12 -->
+                                    <div class="col-xs-11 col-sm-6 col-md-4 total-area-input">
+                                        <label class="label-add-type">Total Area Of Property</label>
+                                        
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Eg:2500" aria-describedby="basic-addon2"> 
+                                            <span class="input-group-addon" id="basic-addon2">Sqft</span> 
+                                        </div>
+                                    </div>  <!--  col-sm-6 -->
+                                    
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                  <!--  this div just has border -->
+                                        <div class="ft_content-sub-separations-grey" style="margin-top:20px;"></div>
+                                    </div> <!--  col-xs-12   -->
+                                </div>    <!--  row -->
+                                
+                                <div class="row">  
+                                    <div class="col-xs-12 col-sm-12 col-md-12 oultine-and-red">
+                                        <label class="label-add-type">Property Type</label>
+
+                                       {% for item in category %}
+                                        <button type="button" class="btn ft_outlined-btn">{{item}}</button>
+                                       {% endfor %}
+                                    </div>  <!--  col-sm-12 -->
+                                    
+                                    <div class="col-xs-12 col-sm-12 col-md-12 oultine-and-red">
+                                        <div class="property-type-img-wrap">
+                                            <img src="{% static 'img/image-thumb.png' %}" class="property-type-img">
+                                            
+                                            <button type="button" class="property-type-img-delete">
+                                                <img src="{% static 'img/img-delete.png' %}">
+                                            </button>
+                                            <span class="set-as-main-label">Set as main</span>
+                                        </div>
+                                        
+                                        <div class="property-type-img-wrap">
+                                            <img src="{% static 'img/image-thumb.png' %}" class="property-type-img">
+                                        </div>
+                                        
+                                      <!--  below is the upload btn, it also has a tool tip -->
+                                        <label class="btn ft_outlined-btn ft_align-label upload-btn align-vertical" for="property-img-upload" data-toggle="tooltip" data-placement="top" title="Please upload<br/>quality image">
+                                            <input type="file" id="property-img-upload" style="display:none;">
+                                            <img src="{% static 'img/camera-img-in-property.png' %}" >
+                                        </label>
+                                        
+                                      <!--  below is the upload btn, it also has a tool tip -->
+                                        <label class="btn ft_outlined-btn ft_align-label upload-btn align-vertical" for="property-video-upload" data-toggle="tooltip" data-placement="top" title="Please upload<br/>Less size video">
+                                            <input type="file" id="property-video-upload" style="display:none;">
+                                            <img src="{% static 'img/video.png' %}" >
+                                        </label>
+                                    
+                                    </div>  <!--  col-sm-12 -->
+                                    
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                  <!--  this div just has border -->
+                                        <div class="ft_content-sub-separations-grey"></div>
+                                    </div> <!--  col-xs-12   -->
+                                </div>  <!--  row  -->
+                                
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                        <label class="label-add-type" style="margin-bottom:15px;">Which Time are you available</label>
+                                    </div>  <!--  col-md-12 -->
+                                    
+                                    <div class="col-xs-12 col-sm-6 col-md-6 oultine-and-red">
+                                        <div class="days-name-wrap">
+                                            <label class="label-add-type">Sun</label>
+                                            <label class="label-add-type day-selected">Mon</label>
+                                            <label class="label-add-type">Tue</label>
+                                            <label class="label-add-type">Wed</label>
+                                            <label class="label-add-type">Thu</label>
+                                            <label class="label-add-type">Fri</label>
+                                            <label class="label-add-type">Sat</label>
+                                        </div>  <!--  days-name-wrap  -->
+                                        
+                                      <!--  below is a slider  --> 
+                                        <div class="choose-available-time">
+                                            <div>
+                                                <button type="button" class="btn ft_default-btn-red">8Am to 10Pm</button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btn ft_outlined-btn">10Am to 12Pm</button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btn ft_outlined-btn">12Pm to 2Pm</button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btn ft_outlined-btn">2Pm to 4Pm</button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btn ft_outlined-btn">4Pm to 10Pm</button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btn ft_outlined-btn">6Pm to 10Pm</button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btn ft_outlined-btn">8Pm to 10Pm</button>
+                                            </div>
+                                            
+                                        </div>  <!--  choose-available-time  -->
+                                        
+                                    </div>  <!--  col-sm-6 -->
+                                    <div class="col-xs-11 col-sm-6 col-md-4 rent-and-deposit">
+                                        <label class="label-add-type">Value of your property</label>
+                                        
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Eg:225000" aria-describedby="deposit-amount"> 
+                                            <span class="input-group-addon" id="basic-addon2">AED</span> 
+                                        </div>
+                                    </div>  <!--  col-sm-6 -->
+                                    
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                  <!--  this div just has border -->
+                                        <div class="ft_content-sub-separations-grey"></div>
+                                    </div> <!--  col-xs-12   -->
+                                </div> <!--  row -->
+                                
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                        <label class="label-add-type" style="margin-bottom:15px;">Property Type Details</label>
+                                    </div>  <!--  col-md-12 -->
+                                    
+                                    <div class="col-xs-12 col-sm-6 col-md-6 oultine-and-red">
+                                        <label class="label-add-type">Number Of Bedrooms</label>
+                                        
+                                        <button type="button" class="btn ft_outlined-btn ft_align-label">Studio</button>
+                                        <button type="button" class="btn ft_outlined-btn ft_align-label">1</button>
+                                        <button type="button" class="btn ft_outlined-btn ft_align-label">2</button>
+                                        <button type="button" class="btn ft_outlined-btn ft_align-label">3</button>
+                                        <button type="button" class="btn ft_outlined-btn ft_align-label">4</button>
+                                        <button type="button" class="btn ft_outlined-btn ft_align-label">5+</button>
+                                <!--  below is the upload btn -->
+                                        <label class="btn ft_outlined-btn ft_align-label upload-btn" for="img-upload">
+                                            <input type="file" id="img-upload" style="display:none;">
+                                            <img src="{% static 'img/camera-img-in-property.png' %}" >
+                                        </label>
+                                        
+                                        <div class="clearfix"></div>
+                                        
+                                        <label class="label-add-type" style="margin-top:15px;">Upload Kitchen Photos</label>
+                                    <!--  below is the upload btn -->
+                                        <label class="btn ft_outlined-btn ft_align-label upload-btn" for="img-upload">
+                                            <input type="file" id="img-upload" style="display:none;">
+                                            <img src="{% static 'img/camera-img-in-property.png' %}" >
+                                        </label>
+                                    </div>  <!--  col-sm-6 -->
+                                    
+                                    <div class="col-xs-12 col-sm-6 col-md-6 oultine-and-red">
+                                        <label class="label-add-type">Number Of Bathrooms</label>
+                                        
+                                        <button type="button" class="btn ft_outlined-btn ft_align-label">1</button>
+                                        <button type="button" class="btn ft_outlined-btn ft_align-label">2</button>
+                                        <button type="button" class="btn ft_outlined-btn ft_align-label">3</button>
+                                        <button type="button" class="btn ft_outlined-btn ft_align-label">4</button>
+                                        <button type="button" class="btn ft_outlined-btn ft_align-label">5+</button>
+                                <!--  below is the upload btn -->
+                                        <label class="btn ft_outlined-btn ft_align-label upload-btn" for="img-upload">
+                                            <input type="file" id="img-upload" style="display:none;">
+                                            <img src="{% static 'img/camera-img-in-property.png' %}" >
+                                        </label>
+                                        
+                                        <div class="clearfix"></div>
+                                        
+                                        <label class="label-add-type" style="margin-top:15px;">Add Photos Of Living Room</label>
+                                    <!--  below is the upload btn -->
+                                        <label class="btn ft_outlined-btn ft_align-label upload-btn" for="img-upload">
+                                            <input type="file" id="img-upload" style="display:none;">
+                                            <img src="./img/camera-img-in-property.png" >
+                                        </label>
+                                    </div>  <!--  col-sm-6 -->
+                                    
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                  <!--  this div just has border -->
+                                        <div class="ft_content-sub-separations-grey"></div>
+                                    </div> <!--  col-xs-12   -->
+                                </div> <!--  row -->
+                                
+                                <div class="row">  
+                                    <div class="col-xs-12 col-sm-12 col-md-11 oultine-and-red">
+                                        <label class="label-add-type">Facilities</label>
+                                        
+                                        {% for item in amenities %}
+                                        <button type="button" class="btn ft_outlined-btn">{{item}}</button>
+                                        {% endfor %}
+                                        
+                                    </div>   <!--  col-xs-12   -->
+                                    
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                   <!--  this div just has border -->
+                                        <div class="ft_content-sub-separations-grey" style="margin-top:21px"></div>
+                                    </div>  <!--  col-sm-12 -->
+                                </div>
+                                
+                                <div class="row">  
+                                    <div class="col-xs-12 col-sm-12 col-md-11 oultine-and-red">
+                                        <label class="label-add-type">Nearby Amenities</label>
+                                        {% for item in near_facilities %}
+                                        <button type="button" class="btn ft_outlined-btn">{{item}}</button>
+                                        {% endfor %}
+                                    </div>   <!--  col-xs-12   -->
+                                    
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                   <!--  this div just has border -->
+                                        <div class="ft_content-sub-separations-grey" style="margin-top:21px"></div>
+                                    </div>  <!--  col-sm-12 -->
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                        <label class="label-add-type" style="margin-bottom:15px;">Details</label>
+                                    </div>  <!--  col-md-12 -->
+                                    
+                                    <div class="col-xs-12 col-sm-6 col-md-6 oultine-and-red">
+                                        <label class="label-add-type">Floor Type</label>
+                                        
+                                        {% for item in floor %}
+                                        <button type="button" class="btn ft_outlined-btn">{{item}}</button>
+                                        {% endfor %}
+                                        
+                                    </div>  <!--  col-sm-6 -->
+                                    
+                                    <div class="col-xs-12 col-sm-6 col-md-6 oultine-and-red">
+                                        <label class="label-add-type">Furnished</label>
+                                        
+                                        <button type="button" class="btn ft_outlined-btn">Fully Furnished</button>
+                                        <button type="button" class="btn ft_outlined-btn">Semi Furnished</button>
+                                        <button type="button" class="btn ft_outlined-btn">Not Furnished</button>
+                                    </div>  <!--  col-sm-6 -->
+                                    
+                                    <div class="col-xs-12 col-sm-12 col-md-12 oultine-and-red">
+                                        <label class="label-add-type" style="margin-top:24px;">Wall Type</label>
+                                        {% for item in wall %}
+                                            
+                                        <button type="button" class="btn ft_outlined-btn">{{item}}</button>
+                                        {% endfor %}
+                                    </div>  <!--  col-xs-12   -->
+                                    
+                                    <div class="col-xs-12 col-sm-12 col-md-12 oultine-and-red">
+                                        <label class="label-add-type" style="margin-top:23px;">Wall Color</label>
+                                        
+                                        <span class="color-block"></span>
+                                        
+                                        <label class="add-color-block" for="color-upload">
+                                            <input type="file" id="color-upload" style="display:none;">
+                                            <img src="{% static 'img/plus-white.png' %}" class="add-icon">
+                                        </label>
+                                    </div>  <!--  col-xs-12   -->
+                                    
+                                                                       
+                                </div> <!--  row -->
+                            
+                            </div>  <!--  uformstart  -->
+                        
+                        </div>  <!--  uform  -->
+                        
+                        <div class="uform u-form-bottom">
+                            
+                            <div class="row">
+                                
+                                <label class="label-add-type" style="margin-bottom:15px;margin-left:15px;">Add Ons</label>
+                                
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <span class="ft_checkbox">
+                                        <label>
+                                            <input type="checkbox" value="" checked> 
+                                            <span class="cr">
+                                                <i class="cr-icon fa fa-check"></i>
+                                            </span> 
+                                            Featured Listing 30 Days 
+                                            <div class="addon-price">
+                                                AED <span>35</span>
+                                            </div>
+                                        </label>
+                                    </span> <!--  ft_checkbox  -->
+                                </div>  <!--  col-xs-12 col-sm-12 col-md-6  -->
+                                
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <span class="ft_checkbox">
+                                        <label>
+                                            <input type="checkbox" value=""> 
+                                            <span class="cr">
+                                                <i class="cr-icon fa fa-check"></i>
+                                            </span> 
+                                            Pick & Drop / 1 cycle(City limit/Emirate) 
+                                            <div class="addon-price">
+                                                AED <span>75</span>
+                                            </div>
+                                        </label>
+                                    </span> <!--  ft_checkbox  -->
+                                </div>  <!--  col-xs-12 col-sm-12 col-md-6  -->
+                                
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <span class="ft_checkbox">
+                                        <label>
+                                            <input type="checkbox" value="" checked> 
+                                            <span class="cr">
+                                                <i class="cr-icon fa fa-check"></i>
+                                            </span> 
+                                            Documentation Support(within 20 Kms) 
+                                            <div class="addon-price">
+                                                AED <span>49</span>
+                                            </div>
+                                        </label>
+                                    </span> <!--  ft_checkbox  -->
+                                </div>  <!--  col-xs-12 col-sm-12 col-md-6  -->
+                                
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <span class="ft_checkbox">
+                                        <label>
+                                            <input type="checkbox" value="" > 
+                                            <span class="cr">
+                                                <i class="cr-icon fa fa-check"></i>
+                                            </span> 
+                                            Video Taking Service 
+                                            <div class="addon-price">
+                                                AED <span>35</span>
+                                            </div>
+                                        </label>
+                                    </span> <!--  ft_checkbox  -->
+                                </div>  <!--  col-xs-12 col-sm-12 col-md-6  -->
+                                
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <span class="ft_checkbox">
+                                        <label>
+                                            <input type="checkbox" value="" > 
+                                            <span class="cr">
+                                                <i class="cr-icon fa fa-check"></i>
+                                            </span> 
+                                            No of co-ord / 5 visits 
+                                            <div class="addon-price">
+                                                AED <span>35</span>
+                                            </div>
+                                        </label>
+                                    </span> <!--  ft_checkbox  -->
+                                </div>  <!--  col-xs-12 col-sm-12 col-md-6  -->
+                                
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <span class="ft_checkbox">
+                                        <label>
+                                            <input type="checkbox" value="" > 
+                                            <span class="cr">
+                                                <i class="cr-icon fa fa-check"></i>
+                                            </span> 
+                                            Visitors data weekly 
+                                            <div class="addon-price">
+                                                AED <span>49</span>
+                                            </div>
+                                        </label>
+                                    </span> <!--  ft_checkbox  -->
+                                </div>  <!--  col-xs-12 col-sm-12 col-md-6  -->
+                                
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                               <!--  this div just has border -->
+                                    <div class="ft_content-sub-separations-grey" style="margin-top:20px"></div>
+                                </div>  <!--  col-sm-12 -->
+                            </div>  <!--  row -->
+                            
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12 col-sm-6 formprice bottom-price-property">
+                                    <p>Total Price</p>
+                                    <h3><span>AED</span> 230</h3>
+                                </div>
+                                <div class="col-md-6 col-xs-12 col-sm-6 formbutton">
+                                    <button class="continuebtn ft_payment-btn" type="button"> Continue</button>
+                                    <button class="cancelbtn ft_cancel-btn" type="button"> Cancel</button>
+                                </div>
+                            </div>  <!--  row -->
+                        
+                        </div>  <!--  uform  -->
+                    
+                    </div>  <!--  col-sm-12 -->
+                </div>  <!--  row  -->
+            </div> <!--  container  -->
+        </div>  <!--  ft_joblist_content  -->
+      
+      <!--  ** Section: News letter sign up --> 
+        <div class="news-letter-signup-wrap">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-7">
+                        <h5>NewsLetter Sign-up</h5>
+                        <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit auctor aliquet. Lorem ipsum dolor sit amet proin gravida nibh vel velit auctor aliquet.</p>
+                    </div>  <!-- col-xs-12 col-sm-6 col-md-7 -->
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-5">
+                        <div class="form-group ft_send-number-for-app-wrap subscribe-input">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">Subscribe</button>
+                                </span>
+                            </div>  <!--  input-group -->
+                        </div>  <!--  ft_send-number-for-app-wrap -->
+                    </div>  <!-- col-xs-12 col-sm-6 col-md-5 -->
+                </div>  <!--  row  -->
+            
+            </div>   <!--  container  -->
+        </div>  <!--  row  news-letter-signup-wrap-->
+      <!--  ** Section: News letter sign up -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <!--  bootstrap select dropdown js -->
+	    <script src="{% static 'bootstrap-select-js/bootstrap-select.min.js' %}"></script>
+        <!--  bootstrap slider js -->
+	    <script src="{% static 'bootstrap-slider-js/bootstrap-slider.min.js' %}"></script>
+        <!-- bxSlider js file --> 
+        <script src="{% static 'jquery-bx-slider-js/jquery.bxslider.min.js' %}"></script>
+        <!-- slick js file --> 
+        <script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
+        <script>
+            $(document).ready(function(){
+              $('.choose-available-time').slick({
+                  dots: true,
+                  infinite: false,
+                  speed: 300,
+                  slidesToShow: 4,
+                  slidesToScroll: 4,
+                  responsive: [
+                    {
+                      breakpoint: 1200,
+                      settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: false,
+                        dots: true
+                      }
+                    },
+                    {
+                      breakpoint: 992,
+                      settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: false,
+                        dots: true
+                      }
+                    },
+                    {
+                      breakpoint: 767,
+                      settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        infinite: false,
+                        dots: true
+                      }
+                    },
+                    {
+                      breakpoint: 600,
+                      settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: false,
+                      }
+                    },
+                    {
+                      breakpoint: 480,
+                      settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: false,
+                      }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                  ]
+                });
+            });
+        </script>
+        
+       <!--  code for owner/broker button -->
+        <script>
+            $(document).ready(function(){
+                $(".owner-broker-btn-wrap .btn-owner-broker").click(function(){
+                    $(this).toggleClass("btn-owner-broker-wrap-selected")
+                    $(this).siblings(".btn[disabled]").css( {"border-color": "#cb202d", "transition": "all .2s ease-in"});
+                });
+            });
+        </script>
+      <!--  code fo initialising tooltip-->
+        <script>
+            $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+        <script>
+            $('.upload-btn').tooltip({html: true});
+        </script>
+	</body>
+</html>
